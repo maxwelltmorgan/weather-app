@@ -1,0 +1,34 @@
+.current {
+    height: 350px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.currentIcon {
+    display: inline;
+    vertical-align: top;
+}
+
+.left {
+    display: inline-block;
+}
+
+.details {
+    display: inline-block;
+    vertical-align: text-bottom;
+}
+
+.current-detail {
+    color: white;
+}
+
+.current-loc {
+    padding-top: 20px;
+    font-size: 4rem;
+    margin: 0;
+}
+
+.current-temp {
+    font-size: 10rem;
+    margin: 0;
+}
