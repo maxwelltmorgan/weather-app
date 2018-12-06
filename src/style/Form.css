@@ -1,31 +1,60 @@
-.form {
-    text-align: center;
-    width: 50%;
+.form-inner {
+    width: 80%;
     margin: 0 auto;
+    text-align: center;
 }
 
 .input {
     background-color: inherit;
     border: none;
-    border-bottom: 1px white solid;
-    font-size: 4rem;
+    border-bottom: 1px dotted #1874CD;
+    font-size: 3rem;
     color: white;
-    padding-left: 10px;
-    width: 90%;
+    text-align: center;
+    vertical-align: text-bottom;
 }
 
 button {
     background-color: inherit;
     border: none;
-    color: white;
-    font-size: 4rem;
-    margin-left: -40px;
+    color: #1874CD;
+    font-size: 2.8rem;
+    line-height: 2.8rem;
+    vertical-align: top;
+    margin-top: 6px;
 }
 
 button:hover {
-    color: blue;
+    color: white;
 }
 
 button:active {
-    color: darkblue;
+    color: dodgerblue;
+    font-size: 4rem;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #1874CD;
+    opacity: 1; /* Firefox */
+    text-align: center;
+    word-spacing: .5rem;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #1874CD;
+    text-align: center;
+    word-spacing: .5rem;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #1874CD;
+    text-align: center;
+    word-spacing: .5rem;
 }

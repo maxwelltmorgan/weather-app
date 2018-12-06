@@ -5,8 +5,10 @@ class Form extends React.Component {
     render() {
         return(
             <form onSubmit={this.props.weatherData} className='form'>
-                <input className='input' type="text" name="location" placeholder="city..."/>
-                <button>+</button>
+                <div className='form-inner'>
+                    <input className='input' type="text" name="location" placeholder="enter city name" width="120" autocomplete="off"/>
+                    <button>+</button>
+                </div>
             </form>
         );
     }
