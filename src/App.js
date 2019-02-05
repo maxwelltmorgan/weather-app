@@ -17,10 +17,10 @@ class App extends Component {
         e.preventDefault();
         const location = e.target.elements.location.value;
         try {
-            const response = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${location}, us&APPID=0df5d35b0375ba9176af78d1038ccf76&units=imperial`);
+            const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${location}, us&APPID=0df5d35b0375ba9176af78d1038ccf76&units=imperial`);
             const json = await response.json();
             console.log(json);
-            const responseB = await fetch(`http://api.openweathermap.org/data/2.5/forecast?q=${location}, us&APPID=0df5d35b0375ba9176af78d1038ccf76&units=imperial`);
+            const responseB = await fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${location}, us&APPID=0df5d35b0375ba9176af78d1038ccf76&units=imperial`);
             const jsonB = await responseB.json();
             console.log(jsonB);
             this.setState({
@@ -37,10 +37,10 @@ class App extends Component {
     weatherDefault = async (e) => {
         const location = 'Denver';
         try {
-            const response = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${location}, us&APPID=0df5d35b0375ba9176af78d1038ccf76&units=imperial`);
+            const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${location}, us&APPID=0df5d35b0375ba9176af78d1038ccf76&units=imperial`);
             const json = await response.json();
             console.log(json);
-            const responseB = await fetch(`http://api.openweathermap.org/data/2.5/forecast?q=${location}, us&APPID=0df5d35b0375ba9176af78d1038ccf76&units=imperial`);
+            const responseB = await fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${location}, us&APPID=0df5d35b0375ba9176af78d1038ccf76&units=imperial`);
             const jsonB = await responseB.json();
             console.log(jsonB);
             this.setState({
