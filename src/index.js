@@ -1,9 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import './style/Current.css';
-import './style/FiveDay.css';
-import './style/Form.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
